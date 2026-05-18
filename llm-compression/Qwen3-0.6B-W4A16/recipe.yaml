@@ -1,0 +1,11 @@
+quant_stage:
+  quant_modifiers:
+    GPTQModifier:
+      ignore: [lm_head]
+      sequential_targets: [Qwen3DecoderLayer]
+      dampening_frac: 0.01
+      config_groups:
+        group0:
+          targets: [Linear]
+          weights: {num_bits: 4, type: int, strategy: group, group_size: 64, symmetric: false,
+            actorder: weight, observer: mse}
