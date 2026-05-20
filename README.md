@@ -24,7 +24,7 @@ The recommended flow is **1 → 2 → 3**, but each notebook is self-contained �
 1. Open **OpenShift AI** from the Developer Sandbox and create a workbench using the **Jupyter Minimal — CPU — Python 3.12** image.
 2. Clone this repo inside the workbench:
    ```bash
-   git clone https://github.com/<org>/get-started-with-vllm.git
+   git clone https://github.com/cedricclyburn/get-started-with-vllm.git
    ```
 3. Open the notebook you want, install its dependencies (`pip install -r requirements.txt` in the matching folder), and run the cells.
 
